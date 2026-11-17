@@ -5,7 +5,7 @@
 // TODO(goderbauer): Restructure the examples to avoid this ignore, https://github.com/flutter/flutter/issues/110208.
 // ignore_for_file: avoid_implementing_value_types
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import '../shared/dropdown_menu.dart' as dropdown;
 import '../shared/markdown_demo_widget.dart';
@@ -83,7 +83,7 @@ class _MarkdownBodyShrinkWrapDemoState extends State<MarkdownBodyShrinkWrapDemo>
                 alignment: Alignment.bottomCenter,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.5),
+                    color: Colors.grey.withValues(alpha: 0.5),
                     border: Border.all(
                       color: Colors.red,
                       width: 2,

@@ -11,12 +11,6 @@ analyzer:
     strict-casts: true
     strict-inference: true
     strict-raw-types: true
-  errors:
-    # Allow deprecated members: otherwise every usage would need annotating each
-    # time the Dart SDK or Flutter deprecates something we still support.
-    # https://github.com/flutter/flutter/issues/143312
-    deprecated_member_use: ignore
-    deprecated_member_use_from_same_package: ignore
   exclude:
     # Generated files.
     - '**/*.g.dart'
@@ -24,6 +18,7 @@ analyzer:
     # Locally symlinked sibling package (flutter_markdown_plus_latex) used for
     # cross-package development; not part of this package.
     - 'flutter_markdown_plus_latex/**'
+    - build/**
 
 formatter:
   page_width: 120
